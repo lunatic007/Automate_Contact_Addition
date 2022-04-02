@@ -16,7 +16,6 @@ public class addContacts {
         }
         if (Integer.parseInt(contactCount.trim()) < 10) {
             System.out.println("<-----Adding contacts in device for performing test---->");
-//        String[] contactList = new String[]{"Test1|8527801638",""};
             ArrayList<String> contactList = new ArrayList<String>(Arrays.asList("Test1|8527801638", "Test2|8527801658", "Test3|8527801888", "Test4|8527801678", "Test5|8527801688", "Test6|8527801698", "Test7|8527801610", "Test8|8527801620", "Test9|8527801630", "Test10|8527801898"));
             try {
                 ProcessBuilder p1 = new ProcessBuilder("adb", "shell", "pm", "clear", "com.android.providers.contacts"); //clear already added contacts
@@ -37,10 +36,6 @@ public class addContacts {
                     } catch (Exception e) {
                     }
                 }
-//            ProcessBuilder p2 = new ProcessBuilder("adb","shell","am","start","-a","android.intent.action.INSERT","-t","vnd.android.cursor.dir/contact","-e","name","'Test1'","-e","phone","8527801638");
-//            p2.start();
-//            ActionHelper.gotoSleep(10000);
-//            ActionHelper.click(By.xpath("//*[@text='Save' or @text='SAVE']"));
                 gotoSleep(3000);
             } catch (Exception e) {
                 e.printStackTrace();
