@@ -2,7 +2,7 @@
 Add contacts to device through java-adb code through automation
 
 Steps to add contacts:
-- Run command to check whether there is or more contacts already saved in device (it was my requirement)
+- Run command to check whether there are 10 or more contacts already saved in device (it was my requirement)
 - If contacts_count < 10 : run your contact addition code ? continou to further code
 - Contact < 10:
 - Store all contacts in with name & number in a string array. Format eg: "Test1|8527801638", "Test2|8527801658", ....etc
